@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root
+{
+    --cor-primaria: #000000;
+    --cor-segundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria);
+}
+
+.Cabeçalho
+{
+    padding: 1% 0% 1% 15%;
+    background-color: #272727;
+}
+
+.Cabeçalho_Menu
+{
+
+    display: flex;
+    gap: 80px;
+}
+
+.Cabeçalho_Menu_Link
+{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 550;
+    color: var(--cor-segundaria);
+    text-decoration: none;
+}
+
+.Cabeçalho_Menu_Link:hover
+{
+    color: var(--cor-terciaria);
+}
+
+.destaqueTitulo
+{
+    color: var(--cor-terciaria);   
+}
+
+.apresentacao
+{
+    Padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.apresentacaoTitulo
+{
+    font-size: 1.375rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.fonteParagrafo
+{
+    font-size: 0.9375rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao_Subtitulo
+{
+    font-family: 'Krona One', 'sans-serif';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.botaoApresentacao
+{
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.botaoPersonalizado
+{
+    display: flex;
+    width: 50%;
+    gap: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.0625rem;
+    font-weight: 800;
+    padding: 10.0px 0;
+    text-decoration: none;
+    color: var(--cor-segundaria);
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid var(--cor-terciaria);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botaoPersonalizado:hover 
+{
+    background-color: #272727;
+}
+
+.fotoYago
+{
+    border-radius: 10px;
+    width: 50%;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.rodape
+{
+    padding: 12px;
+    color: var(--cor-segundaria);
+    background-color: #272727;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    
+}
+
+@media (max-width: 860px)
+{
+    .Cabeçalho
+    {
+        padding: 2%;
+    }
+
+    .Cabeçalho_Menu
+    {
+        justify-content: center;
+    }
+
+    .fotoYago
+    {
+        width: 45%;
+    }
+
+    .apresentacao
+    {
+        gap: 40px;
+        flex-direction: column-reverse;
+        padding: 5% 8%;
+        
+    }
+    
+    .apresentacao__conteudo
+    {
+
+        width: 90%;
+    }
+}
